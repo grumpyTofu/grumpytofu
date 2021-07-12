@@ -12,7 +12,9 @@ export default function Home() {
       </Head>
       <div className="flex flex-col h-full w-full">
         <div className="flex justify-center">
-          <img src="/grumpytofu.webp" alt="Picture of the author" style={{ maxWidth: "30%" }} />
+          <div className="max-w-md">
+            <Image src={grumpyTofu} alt="Picture of the author" />
+          </div>
         </div>
         <p className="text-center text-black dark:text-white">This website is currently under construction</p>
       </div>
