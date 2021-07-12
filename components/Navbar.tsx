@@ -19,28 +19,27 @@ const Navbar: React.FC<NavbarProps> = () => {
             <div>
               <Link href="">
                 <a href="#" className="flex items-center py-5 px-2">
-                  <span className="font-bold hover:text-white">GrumpyTofu</span>
+                  <span className="font-bold text-gray-200 hover:text-white">GrumpyTofu</span>
                 </a>
               </Link>
             </div>
 
             <div className="hidden md:flex items-center space-x-1">
-              <a href="#" className="py-5 px-3 text-gray-700 hover:text-gray-900">
-                Features
-              </a>
-              <a href="#" className="py-5 px-3 text-gray-700 hover:text-gray-900">
-                Pricing
-              </a>
+              <Link href="">
+                <a className="py-5 px-3 text-gray-400 hover:text-white">Projects</a>
+              </Link>
+              <Link href="">
+                <a className="py-5 px-3 text-gray-400 hover:text-white">Blog</a>
+              </Link>
             </div>
           </div>
 
           <div className="hidden md:flex items-center space-x-1">
-            <a href="" className="py-5 px-3">
-              Login
-            </a>
-            <a href="" className="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300">
-              Signup
-            </a>
+            <Link href="">
+              <a className="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300">
+                Contact
+              </a>
+            </Link>
           </div>
 
           {/* <!-- mobile button goes here --> */}
@@ -54,12 +53,12 @@ const Navbar: React.FC<NavbarProps> = () => {
 
       {open && (
         <div className="mobile-menu md:hidden">
-          <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-600">
-            Features
-          </a>
-          <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-600">
-            Pricing
-          </a>
+          <Link href="">
+            <a className="block py-2 px-4 text-sm hover:bg-gray-600">Projects</a>
+          </Link>
+          <Link href="">
+            <a className="block py-2 px-4 text-sm hover:bg-gray-600">Blog</a>
+          </Link>
         </div>
       )}
     </nav>
