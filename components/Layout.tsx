@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import grumpyTofu from "../public/grumpyTofu.webp";
+import grumpyTofu from "../public/grumpytofu.webp";
 
 interface LayoutProps {}
 
