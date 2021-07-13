@@ -1,6 +1,8 @@
 import React from "react";
+import Image from "next/image";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import grumpyTofu from "../public/grumpyTofu.webp";
 
 interface LayoutProps {}
 
@@ -16,10 +18,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
         {/* <!--Right Col--> */}
         <div className="w-full p-12 overflow-hidden md:flex md: justify-center md:align-middle">
-          <img
-            className="mx-auto w-full sm:4/5 md:w-3/5 lg:w-2/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6"
-            src="grumpytofu.webp"
-          />
+          <div className="mx-auto w-full sm:4/5 md:w-3/5 lg:w-2/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6">
+            <Image src={grumpyTofu} alt="GrumpyTofu" />
+          </div>
         </div>
 
         <Footer />

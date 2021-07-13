@@ -40,10 +40,10 @@ export default function Home() {
           <div className="w-full">
             <div className="grid grid-cols-2 gap-2">
               {projects.map((project) => (
-                <div>
-                  <a href={project.url} target="_blank">
+                <div key={project.url}>
+                  <a href={project.url} target="_blank" rel="noreferrer">
                     <div className="transform-gpu duration-300 hover:scale-105">
-                      <Image src={project.image} />
+                      <Image src={project.image} alt={`${project.text} project image`} />
                     </div>
                   </a>
                   <p className="text-xl text-white p-2">{project.text}</p>

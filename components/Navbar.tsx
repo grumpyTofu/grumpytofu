@@ -28,6 +28,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             className="inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
             href="https://github.com/grumpyTofu"
             target="_blank"
+            rel="noreferrer"
           >
             <svg viewBox="0 0 438.549 438.549" className="fill-current h-6">
               <g>
