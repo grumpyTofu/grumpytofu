@@ -5,6 +5,8 @@
 
 @layer base {
   body {
-    @apply bg-[#06202A] text-gray-300 overflow-hidden overflow-y-scroll;
+    /* @apply bg-[#06202A] text-gray-300 overflow-hidden overflow-y-scroll; */
+    @apply leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed;
+    background-image: url('/header.png');
   }
 }

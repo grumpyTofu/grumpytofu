@@ -3,6 +3,14 @@ module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: "media", // or 'media' or 'class'
   theme: {
+    backgroundColor: (theme) => ({
+      ...theme("colors"),
+      "custom-light-blue": "#3F5A76",
+      "custom-blue": "#163942",
+      "custom-dark-blue": "#06202A",
+      "custom-purple": "#76498F",
+      "custom-dark-purple": "#312035",
+    }),
     extend: {
       transistionProperty: {
         width: "width",
