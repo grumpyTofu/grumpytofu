@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from 'next/link';
-import grumpyTofu from "../public/grumpytofu.png";
-import nextStream from "../public/next-stream.png";
+import Link from "next/link";
+//import grumpyTofu from "../public/grumpytofu.png";
+import nextStream from "../public/next-stream.webp";
+import nextTube from "../public/next-tube.webp";
 
 interface Project {
   image: StaticImageData;
@@ -15,6 +16,11 @@ const projects: Project[] = [
     image: nextStream,
     text: "Next Stream",
     url: "https://next-stream-five.vercel.app/",
+  },
+  {
+    image: nextTube,
+    text: "Next Tube",
+    url: "https://next-tube.vercel.app/",
   },
 ];
 
@@ -38,12 +44,12 @@ export default function Home() {
         <div className="w-full bg-custom-dark-purple rounded-lg p-5">
           <h2 className="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight underline text-center pb-4">Projects</h2>
           <div className="w-full">
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
               {projects.map((project) => (
                 <div key={project.url}>
                   <a href={project.url} target="_blank" rel="noreferrer">
                     <div className="transform-gpu duration-300 hover:scale-105">
-                      <Image src={project.image} alt={`${project.text} project image`} />
+                      <Image src={project.image} alt={`${project.text} project image`} layout="responsive" height={300} width={500} />
                     </div>
                   </a>
                   <p className="text-xl text-white p-2">{project.text}</p>
