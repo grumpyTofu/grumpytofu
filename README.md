@@ -11,16 +11,29 @@ It looks like you have made it to my github. I am a software engineer with a spe
 - Full Stack Engineering (.NET, MAUI, TypeScript, NodeJS, Python, React, etc).
 
 ### 🛠 Things I code with:
-<p>
-  <a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/533da8800843b57b91a3227ce7d151ca865a0eeaae675715e209c0092314fa96/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d52656163742d3435623864383f7374796c653d666c61742d737175617265266c6f676f3d7265616374266c6f676f436f6c6f723d7768697465"><img alt="React" src="https://camo.githubusercontent.com/533da8800843b57b91a3227ce7d151ca865a0eeaae675715e209c0092314fa96/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d52656163742d3435623864383f7374796c653d666c61742d737175617265266c6f676f3d7265616374266c6f676f436f6c6f723d7768697465" data-canonical-src="https://img.shields.io/badge/-React-45b8d8?style=flat-square&amp;logo=react&amp;logoColor=white" style="max-width:100%;"></a>
-  <a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/5ffd853b0824728d0a8ce1f5dd3634891bb73fe5c560b423eb45c0e34be4581c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d52656475782d3736344142433f7374796c653d666c61742d737175617265266c6f676f3d7265647578266c6f676f436f6c6f723d7768697465"><img alt="redux" src="https://camo.githubusercontent.com/5ffd853b0824728d0a8ce1f5dd3634891bb73fe5c560b423eb45c0e34be4581c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d52656475782d3736344142433f7374796c653d666c61742d737175617265266c6f676f3d7265647578266c6f676f436f6c6f723d7768697465" data-canonical-src="https://img.shields.io/badge/-Redux-764ABC?style=flat-square&amp;logo=redux&amp;logoColor=white" style="max-width:100%;"></a>
-  <a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/0d98e275bc8818697fbcbe9a978a94cb9485f73e228f26fc4667b4fab5647203/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4772617068514c2d4531303039383f7374796c653d666c61742d737175617265266c6f676f3d6772617068716c266c6f676f436f6c6f723d7768697465"><img alt="GraphQL" src="https://camo.githubusercontent.com/0d98e275bc8818697fbcbe9a978a94cb9485f73e228f26fc4667b4fab5647203/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4772617068514c2d4531303039383f7374796c653d666c61742d737175617265266c6f676f3d6772617068716c266c6f676f436f6c6f723d7768697465" data-canonical-src="https://img.shields.io/badge/-GraphQL-E10098?style=flat-square&amp;logo=graphql&amp;logoColor=white" style="max-width:100%;"></a>
-  <a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/d60afb008bc0bcde7ea8720637928cb02c0f9a6d795dad7382f688a17e7515de/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d547970655363726970742d3030374143433f7374796c653d666c61742d737175617265266c6f676f3d74797065736372697074266c6f676f436f6c6f723d7768697465"><img alt="TypeScript" src="https://camo.githubusercontent.com/d60afb008bc0bcde7ea8720637928cb02c0f9a6d795dad7382f688a17e7515de/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d547970655363726970742d3030374143433f7374796c653d666c61742d737175617265266c6f676f3d74797065736372697074266c6f676f436f6c6f723d7768697465" data-canonical-src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&amp;logo=typescript&amp;logoColor=white" style="max-width:100%;"></a>
-  <a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/ff2baf6c78c6a722f95c6b0ef52f409d7f50ffaccb826483b3a669b967ddbc67/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d416e67756c61722d4444303033313f7374796c653d666c61742d737175617265266c6f676f3d616e67756c6172266c6f676f436f6c6f723d7768697465"><img alt="angular" src="https://camo.githubusercontent.com/ff2baf6c78c6a722f95c6b0ef52f409d7f50ffaccb826483b3a669b967ddbc67/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d416e67756c61722d4444303033313f7374796c653d666c61742d737175617265266c6f676f3d616e67756c6172266c6f676f436f6c6f723d7768697465" data-canonical-src="https://img.shields.io/badge/-Angular-DD0031?style=flat-square&amp;logo=angular&amp;logoColor=white" style="max-width:100%;"></a>
-  
-  <a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/4d015bf250194995d899a5d2b90babf1afc4458c1589b93e58fdfa4119749a49/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d446f636b65722d3436613266313f7374796c653d666c61742d737175617265266c6f676f3d646f636b6572266c6f676f436f6c6f723d7768697465"><img alt="Docker" src="https://camo.githubusercontent.com/4d015bf250194995d899a5d2b90babf1afc4458c1589b93e58fdfa4119749a49/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d446f636b65722d3436613266313f7374796c653d666c61742d737175617265266c6f676f3d646f636b6572266c6f676f436f6c6f723d7768697465" data-canonical-src="https://img.shields.io/badge/-Docker-46a2f1?style=flat-square&amp;logo=docker&amp;logoColor=white" style="max-width:100%;"></a>
-  <a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/425d14e7ceaf18d8bb8e9bf17cd1a270c928c888b9ee4abe84a3bc8a5b3122fe/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4e6f64656a732d3433383533643f7374796c653d666c61742d737175617265266c6f676f3d4e6f64652e6a73266c6f676f436f6c6f723d7768697465"><img alt="Nodejs" src="https://camo.githubusercontent.com/425d14e7ceaf18d8bb8e9bf17cd1a270c928c888b9ee4abe84a3bc8a5b3122fe/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4e6f64656a732d3433383533643f7374796c653d666c61742d737175617265266c6f676f3d4e6f64652e6a73266c6f676f436f6c6f723d7768697465" data-canonical-src="https://img.shields.io/badge/-Nodejs-43853d?style=flat-square&amp;logo=Node.js&amp;logoColor=white" style="max-width:100%;"></a>
-</p>
+
+<!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=grumpyTofu&theme=blue-green" /> -->
+
+<!-- ultimate readme theming guide: https://dev.to/envoy_/150-badges-for-github-pnk -->
+
+<a><img alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /></a>
+<a><img alt="Redux" src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" /></a>
+<a><img src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white" /></a>
+<a target="_blank" rel="noopener noreferrer"><img alt="GraphQL" src="https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&amp;logo=graphql&amp;logoColor=white" /></a>
+<a><img alt="Typescript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"></a>
+<a><img alt="Angular" src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" /></a>
+
+<a target="_blank" rel="noopener noreferrer"><img alt="C Sharp" src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" /></a>
+<a target="_blank" rel="noopener noreferrer"><img alt="Dot Net" src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" /></a>
+<a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/4d015bf250194995d899a5d2b90babf1afc4458c1589b93e58fdfa4119749a49/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d446f636b65722d3436613266313f7374796c653d666c61742d737175617265266c6f676f3d646f636b6572266c6f676f436f6c6f723d7768697465"><img alt="Docker" src="https://camo.githubusercontent.com/4d015bf250194995d899a5d2b90babf1afc4458c1589b93e58fdfa4119749a49/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d446f636b65722d3436613266313f7374796c653d666c61742d737175617265266c6f676f3d646f636b6572266c6f676f436f6c6f723d7768697465" data-canonical-src="https://img.shields.io/badge/-Docker-46a2f1?style=flat-square&amp;logo=docker&amp;logoColor=white" style="max-width:100%;"></a>
+<a><img alt="NodeJS" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" /></a>
+
+<a><img alt="Python" src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"></a>
+<a><img alt="Flask" src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"></a>
+
+<a><img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" /></a>
+
+<a target="_blank" rel="noopener noreferrer"><img alt="Azure" src="https://img.shields.io/badge/Microsoft_Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white"/></a>
 
 ### 🤝🏻 Where to find me
 <p>
@@ -28,6 +41,10 @@ It looks like you have made it to my github. I am a software engineer with a spe
   <a href="https://www.linkedin.com/in/austin-felix-140a587b/" rel="nofollow"><img alt="LinkedIn" src="https://camo.githubusercontent.com/a493f6833f99fb3c85788d6d9305e6b7a42b838e5ee5d138fd9a8214a7e77472/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c696e6b6564696e2d2532333030373742352e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d6c696e6b6564696e266c6f676f436f6c6f723d7768697465" data-canonical-src="https://img.shields.io/badge/linkedin-%230077B5.svg?&amp;style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" style="max-width:100%;"></a> 
   <a href="https://medium.com/@grumpyTofu" rel="nofollow"><img alt="Medium" src="https://camo.githubusercontent.com/49c80c79c674e543c2c7c2ee7930cc15791f4bd56da17c4b3c91c273349bef8d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6d656469756d2d2532333132313030452e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d6d656469756d266c6f676f436f6c6f723d7768697465" data-canonical-src="https://img.shields.io/badge/medium-%2312100E.svg?&amp;style=for-the-badge&amp;logo=medium&amp;logoColor=white" style="max-width:100%;"></a>
 </p>
+
+---
+
+<img src="https://github-readme-stats.vercel.app/api?username=grumpyTofu&theme=blue-green" />
 
 <!-- Feel free to reach out or head over to [GrumpyTofu.com](https://grumpytofu.com)
   - It's still very much a work in progress -->
