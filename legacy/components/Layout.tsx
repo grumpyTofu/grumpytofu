@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Navbar from "./Navbar";
+import Navbar from "../../src/app/components/Navbar";
 import Footer from "./Footer";
 import grumpyTofu from "../public/grumpytofu.webp";
 

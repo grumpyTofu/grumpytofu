@@ -3,10 +3,11 @@
     {
       "name": "Start App",
       "request": "launch",
-      "runtimeArgs": ["start"],
+      "runtimeArgs": ["dev"],
       "runtimeExecutable": "yarn",
       "skipFiles": ["<node_internals>/**"],
-      "type": "node"
+      "type": "node",
+      "console": "integratedTerminal"
     }
   ]
 }
