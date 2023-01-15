@@ -1,7 +1,7 @@
-import "../app/globals.css";
+import "@portfolio/app/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import Layout from "../components/page-layout";
+import Layout from "@portfolio/components/page-layout";
 
 const queries = {
   xsDown: "(max-width: 475px)",

@@ -1,9 +1,7 @@
-import React, { useMemo } from "react";
+import React from "react";
 import Image from "next/image";
 import { Section, Typography } from "@portfolio/components";
 import Link from "next/link";
-
-// import developer1 from "../public//assets/Illustration1.png";
 
 const About = ({
   listUser = [
@@ -25,7 +23,7 @@ const About = ({
   ],
 }) => {
   return (
-    <Section id="about" variant="transparant">
+    <Section id="about">
       <div className="max-w-screen-xl px-8 xl:px-16 mx-auto">
         <div className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16">
           <div className="flex flex-col justify-center items-start row-start-2 sm:row-start-1">
@@ -33,7 +31,7 @@ const About = ({
               About Me
             </Typography>
             <Typography className="mt-4 mb-6">
-              My name is James and I am is a Senior Software Engineer with experience architecting, developing, and managing enterprise applications.
+              I am a Software Engineer with experience architecting, developing, and managing enterprise applications.
               I specialize in web application development using Full-stack Javascript/Typescript (React & Node.js). I also have experience working with other
               tech stacks including Python, C#/.NET, and SQL. I am passionate about architecting and developing user-friendly, scalable, and secure
               systems.
