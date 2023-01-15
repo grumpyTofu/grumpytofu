@@ -1,5 +1,6 @@
+import Footer from "../components/footer";
 import "./globals.css";
-import Navbar from "./navbar";
+import Navbar from "../components/navbar";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -12,6 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

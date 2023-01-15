@@ -6,7 +6,7 @@ interface TypographyProps extends React.DetailedHTMLProps<React.HTMLAttributes<H
 }
 
 export const Typography = ({ variant, children, className = "", ...props }: TypographyProps) => {
-  let classes = "font-extrabold tracking-tight text-gray-900 dark:text-white-500";
+  let classes = "tracking-tight";
   if (className) classes += ` ${className}`;
   switch (variant) {
     case "h1":
