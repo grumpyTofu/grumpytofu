@@ -1,5 +1,5 @@
 export interface ContactRequest {
-    firstName: string;
-    lastName: string;
+    name: string;
     email: string;
+    message: string;
 }

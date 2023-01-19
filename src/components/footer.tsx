@@ -1,9 +1,15 @@
 import Link from "next/link";
 import React from "react";
 
-const Footer = () => {
+interface FooterProps extends Partial<HTMLDivElement> {
+  className?: string;
+}
+
+const Footer = ({ className }: FooterProps) => {
+  let classes = "dark grid grid-cols-12 gap-4 p-12 glass-frosted";
+  if (className) classes += ` ${className}`;
   return (
-    <footer className="dark grid grid-cols-12 gap-4 p-12 glass-frosted">
+    <footer className={classes}>
       <div className="col-span-full">
         <Link href="/">Spyre Development</Link>
       </div>

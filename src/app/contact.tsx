@@ -1,5 +1,6 @@
-import React, { useMemo } from "react";
+import React from "react";
 import { Section, Typography, Card } from "@portfolio/components";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -11,7 +12,7 @@ const Contact = () => {
           </Typography>
           <Typography>Contact us to schedule a consultation.</Typography>
         </div>
-        <a href="/contact">Contact</a>
+        <Link href="/contact">Contact</Link>
       </Card>
     </Section>
   );

@@ -1,6 +1,6 @@
-import Footer from "../components/footer";
 import "./globals.css";
-import Navbar from "../components/navbar";
+import Navbar from "@portfolio/components/navbar";
+import Footer from "@portfolio/components/footer";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
