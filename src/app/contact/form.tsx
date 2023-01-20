@@ -59,6 +59,7 @@ const ContactForm = () => {
         }
 
         formik.setErrors(error);
+        console.warn(error);
         createToast({ id: nextToastId, variant: "error", message: "Something went wrong. Please try again later." });
       } finally {
         try {
