@@ -1,38 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+=======
+### Hello and Welcome! 👋
 
-## Getting Started
+It looks like you have made it to my github. I am a software engineer with a special interest in security and crypto.
 
-First, run the development server:
+#### 👨🏻‍💻  I’m currently working on
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Enterprise AppSec best practices.
+- Blockchain architecture and security practices.
+- Full Stack Engineering (.NET, MAUI, TypeScript, NodeJS, Python, React, etc).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🛠 Things I code with:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=grumpyTofu&theme=blue-green" /> -->
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<!-- ultimate readme theming guide: https://dev.to/envoy_/150-badges-for-github-pnk -->
+<!-- icon api provider: https://shields.io/ -->
+<!-- icon ref: https://simpleicons.org/ -->
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<a target="_blank" rel="noopener noreferrer" href="https://www.typescriptlang.org/"><img alt="Typescript" src="https://img.shields.io/badge/TypeScript-007FFF?style=for-the-badge&logo=typescript&logoColor=white"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://reactjs.org/"><img alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /></a>
+<a target="_blank" rel="noopener noreferrer" href="https://redux-toolkit.js.org/"><img alt="Redux Toolkit" src="https://img.shields.io/badge/Redux_Toolkit-593D88?style=for-the-badge&logo=redux&logoColor=white" /></a>
+<a target="_blank" rel="noopener noreferrer" href="https://mui.com/"><img src="https://img.shields.io/badge/MUI-0081CB?style=for-the-badge&logo=MUI&logoColor=white" /></a>
+<a target="_blank" rel="noopener noreferrer" href="https://graphql.org/"><img alt="GraphQL" src="https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&amp;logo=graphql&amp;logoColor=white" /></a>
+<a target="_blank" rel="noopener noreferrer" href="https://angular.io/"><img alt="Angular" src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" /></a>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<a target="_blank" rel="noopener noreferrer" href="https://docs.microsoft.com/en-us/dotnet/csharp/"><img alt="C Sharp" src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" /></a>
+<a target="_blank" rel="noopener noreferrer" href="https://docs.microsoft.com/en-us/aspnet/core/"><img alt="Dot Net" src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" /></a>
+<a target="_blank" rel="noopener noreferrer" href="https://nodejs.org/en/"><img alt="NodeJS" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" /></a>
+<a target="_blank" rel="noopener noreferrer" href="https://www.python.org/"><img alt="Python" src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://flask.palletsprojects.com/"><img alt="Flask" src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://www.docker.com/"><img alt="Docker" src="https://img.shields.io/badge/-Docker-46a2f1?style=for-the-badge&amp;logo=docker&amp;logoColor=white" style="max-width:100%;"></a>
 
-## Learn More
+<a target="_blank" rel="noopener noreferrer" href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" /></a>
+<span><img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=MicrosoftSQLServer&logoColor=white" /></span>
 
-To learn more about Next.js, take a look at the following resources:
+<a target="_blank" rel="noopener noreferrer" href="https://docs.soliditylang.org/"><img src="https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=Solidity&logoColor=white" /></a>
+<span><img src="https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white" /></span>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<a target="_blank" rel="noopener noreferrer" href="https://azure.microsoft.com/en-us/"><img alt="Azure" src="https://img.shields.io/badge/Microsoft_Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white"/></a>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 🤝🏻 Where to find me
+<p>
+  <a href="https://github.com/grumpyTofu"><img alt="Github" src="https://img.shields.io/badge/GitHub-%2312100E.svg?&amp;style=for-the-badge&amp;logo=Github&amp;logoColor=white" style="max-width:100%;"></a>
+  <a href="https://www.linkedin.com/in/austin-felix-140a587b/" rel="nofollow"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&amp;style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" style="max-width:100%;"></a> 
+  <a href="https://medium.com/@grumpyTofu" rel="nofollow"><img alt="Medium" src="https://img.shields.io/badge/medium-%2312100E.svg?&amp;style=for-the-badge&amp;logo=medium&amp;logoColor=white" style="max-width:100%;"></a>
+</p>
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<img src="https://github-readme-stats.vercel.app/api?username=grumpyTofu&theme=blue-green" />
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to reach out or head over to [GrumpyTofu.com](https://grumpytofu.com)
+  - It's still very much a work in progress
