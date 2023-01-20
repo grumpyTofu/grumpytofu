@@ -31,16 +31,15 @@ const About = ({
               About Me
             </Typography>
             <Typography className="mt-4 mb-6">
-              I am a Software Engineer with experience architecting, developing, and managing enterprise applications.
-              I specialize in web application development using Full-stack Javascript/Typescript (React & Node.js). I also have experience working with other
-              tech stacks including Python, C#/.NET, and SQL. I am passionate about architecting and developing user-friendly, scalable, and secure
-              systems.
+              I am a Software Engineer with experience architecting, developing, and managing enterprise applications. I specialize in web application
+              development using Full-stack Javascript/Typescript (React & Node.js). I also have experience working with other tech stacks including
+              Python, C#/.NET, and SQL. I am passionate about architecting and developing user-friendly, scalable, and secure systems.
             </Typography>
             <Link href="/about">Learn More</Link>
           </div>
           <div className="flex w-full">
-            <div className="h-full w-full">
-              <Image src="/developer-1.webp" alt="Developer Illustration" quality={100} width={612} height={383} />
+            <div className="h-full w-full flex justify-center items-center">
+              <Image src="/developer-1.webp" alt="Developer Illustration" quality={100} width={612} height={383} priority />
             </div>
           </div>
         </div>

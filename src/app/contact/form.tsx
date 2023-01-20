@@ -1,19 +1,19 @@
 "use client";
 
 import { Card } from "@portfolio/components";
+import { LoadingSpinnerContext } from "@portfolio/components/spinner";
 import TextField from "@portfolio/components/textField";
 import { ToastContext, ToastError } from "@portfolio/components/toast";
 import { ContactRequest } from "@portfolio/types/contact";
 import { useFormik } from "formik";
 import { useContext } from "react";
 import * as Yup from "yup";
+import { GrecaptchaContext } from "./page";
 
-interface ContactFormProps {
-  token: string | undefined;
-}
-
-const ContactForm = ({ token }: ContactFormProps) => {
+const ContactForm = () => {
   const { toasts, createToast } = useContext(ToastContext);
+  const { startLoading, stopLoading } = useContext(LoadingSpinnerContext);
+  const { token, setToken, grecaptcha, grecaptchaKeyId } = useContext(GrecaptchaContext);
 
   const formik = useFormik<ContactRequest>({
     initialValues: {
@@ -30,6 +30,8 @@ const ContactForm = ({ token }: ContactFormProps) => {
       message: Yup.string().max(1000, "There is only one of me reading these messages... Can you try keeping it shorter?"),
     }),
     onSubmit: async (values) => {
+      startLoading();
+
       const nextToastId = toasts.length;
 
       try {
@@ -39,7 +41,7 @@ const ContactForm = ({ token }: ContactFormProps) => {
         const result = await response.json();
 
         if (response.status !== 200) {
-          if (result.type && result.type === "toast-error" && result.message) throw new ToastError(result.message)
+          if (result.type && result.type === "toast-error" && result.message) throw new ToastError(result.message);
           throw result;
         }
 
@@ -58,6 +60,15 @@ const ContactForm = ({ token }: ContactFormProps) => {
 
         formik.setErrors(error);
         createToast({ id: nextToastId, variant: "error", message: "Something went wrong. Please try again later." });
+      } finally {
+        try {
+          const newToken = await grecaptcha.enterprise.execute(grecaptchaKeyId, { action: "login" });
+          setToken(newToken);
+        } catch (error) {
+          createToast({ id: toasts.length, variant: "error", message: "Captcha failed to load. Please refresh and try again." });
+        }
+
+        stopLoading();
       }
     },
   });
@@ -70,6 +81,7 @@ const ContactForm = ({ token }: ContactFormProps) => {
           name="name"
           type="text"
           placeholder="First and Last name"
+          className="col-span-2 md:col-span-1"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.name}
@@ -82,6 +94,7 @@ const ContactForm = ({ token }: ContactFormProps) => {
           name="email"
           type="email"
           placeholder="johnsmith@gmail.com"
+          className="col-span-2 md:col-span-1"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.email}
