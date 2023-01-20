@@ -38,15 +38,15 @@ const ContactForm = () => {
         if (!token) throw new ToastError("Captcha failed to load. Please refresh and try again.");
 
         const response = await fetch("api/contact", { method: "POST", headers: { Authorization: token }, body: JSON.stringify(values) });
-        const result = await response.json();
 
         if (response.status !== 200) {
+          const result = await response.json();
           if (result.type && result.type === "toast-error" && result.message) throw new ToastError(result.message);
           throw result;
         }
 
         formik.resetForm();
-        createToast({ id: nextToastId, variant: "message", message: "Sending message" });
+        createToast({ id: nextToastId, variant: "message", message: "Message sent successfully" });
       } catch (error) {
         if (!error || typeof error !== "object") {
           createToast({ id: nextToastId, variant: "error", message: "An unexpected error occurred. Please try again later." });
