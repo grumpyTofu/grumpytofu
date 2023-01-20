@@ -15,6 +15,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
 
   if (!grecaptchaVerifyResult.success) {
     const [error] = grecaptchaVerifyResult["error-codes"];
+    console.warn(error);
+    
     let message: string;
 
     switch (error) {
@@ -49,11 +51,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
   } else {
     console.error("Out of API calls");
   }
-
-  // const formData = new FormData();
-  // formData.append("name", name);
-  // formData.append("email", email);
-  // formData.append("message", message);
 
   const contactResponse = await fetch("https://api.web3forms.com/submit", {
     method: "POST",
