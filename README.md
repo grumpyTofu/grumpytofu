@@ -1,5 +1,4 @@
-## GrumpyTofu
-
+=======
 ### Hello and Welcome! 👋
 
 It looks like you have made it to my github. I am a software engineer with a special interest in security and crypto.
@@ -51,5 +50,5 @@ It looks like you have made it to my github. I am a software engineer with a spe
 
 <img src="https://github-readme-stats.vercel.app/api?username=grumpyTofu&theme=blue-green" />
 
-<!-- Feel free to reach out or head over to [GrumpyTofu.com](https://grumpytofu.com)
-  - It's still very much a work in progress -->
+Feel free to reach out or head over to [GrumpyTofu.com](https://grumpytofu.com)
+  - It's still very much a work in progress

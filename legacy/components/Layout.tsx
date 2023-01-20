@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import Navbar from "./Navbar";
+import Navbar from "../../src/components/navbar";
 import Footer from "./Footer";
 import grumpyTofu from "../public/grumpytofu.webp";
 
-interface LayoutProps {}
+interface LayoutProps {
+  children: React.ReactNode;
+}
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
