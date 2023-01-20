@@ -6,15 +6,7 @@ import ToastContainer, { Toast, ToastContext } from "@portfolio/components/toast
 import ContactForm from "./form";
 import Script from "next/script";
 import { LoadingSpinnerContext } from "@portfolio/components/spinner";
-
-interface GrecaptchaState {
-  grecaptcha: any;
-  grecaptchaKeyId?: string;
-  token?: string;
-  setToken: (token: string) => any;
-}
-
-export const GrecaptchaContext = createContext<GrecaptchaState>({ grecaptcha: {}, setToken: () => ({}) });
+import { GrecaptchaContext, GrecaptchaState } from "@portfolio/components/grecaptcha";
 
 export default function Contact() {
   const [toasts, setToasts] = useState<Toast[]>([]);

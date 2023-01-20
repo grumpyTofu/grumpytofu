@@ -8,7 +8,7 @@ import { ContactRequest } from "@portfolio/types/contact";
 import { useFormik } from "formik";
 import { useContext } from "react";
 import * as Yup from "yup";
-import { GrecaptchaContext } from "./page";
+import { GrecaptchaContext } from "@portfolio/components/grecaptcha";
 
 const ContactForm = () => {
   const { toasts, createToast } = useContext(ToastContext);
