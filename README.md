@@ -1,4 +1,3 @@
-=======
 ### Hello and Welcome! 👋
 
 It looks like you have made it to my github. I am a software engineer with a special interest in security and crypto.
