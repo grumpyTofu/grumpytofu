@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Section } from "@portfolio/components";
+import Link from "next/link";
 
 const services = ["Custom application development", "Architectural design and consultation", "and more..."];
 
@@ -23,7 +24,7 @@ const Services = () => {
               ))}
             </ul>
             <div className="w-full mt-6 mb-6 flex self-start list-inside">
-              <a href="/services">Learn More</a>
+              <Link href="/services">Learn More</Link>
             </div>
           </div>
         </div>

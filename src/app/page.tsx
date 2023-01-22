@@ -5,16 +5,20 @@ import About from "./about";
 import Contact from "./contact";
 import Services from "./services";
 import Showcase from "./showcase";
+import Navbar from "@portfolio/components/navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <About />
-      <Services />
-      <Showcase />
-      <Contact />
-    </main>
+    <>
+      <Navbar />
+      <main className={styles.main}>
+        <About />
+        <Services />
+        <Showcase />
+        <Contact />
+      </main>
+    </>
   );
 }

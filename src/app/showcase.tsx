@@ -2,6 +2,7 @@ import React, { useMemo } from "react";
 
 import { Section } from "@portfolio/components";
 import ShowcaseItem from "./showcaseItem";
+import Link from "next/link";
 
 const Showcase = () => {
   return (
@@ -14,6 +15,7 @@ const Showcase = () => {
               Check out some examples of applications that I have developed for clients
             </p>
             {/* <ShowcaseItem /> */}
+            <Link href="/showcase" className="mt-12">Learn more</Link>
           </div>
         </div>
       </div>

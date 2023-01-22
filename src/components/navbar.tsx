@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 flex w-full p-6 glass-thick z-30">
-      <div>{pathname === "contact" ? <Link href="/">GrumpyTofu</Link> : <a href="/">GrumpyTofu</a>}</div>
+      <div>{pathname === "/contact" ? <a href="/">GrumpyTofu</a> : <Link href="/">GrumpyTofu</Link>}</div>
       <div className="flex-grow"></div>
       <div>
         {loading ? (
