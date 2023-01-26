@@ -1,12 +1,15 @@
+import BlogPost from "./post";
+import { Suspense, use } from "react";
 import BlogPostLoadingSkeleton from "./skeleton";
 
-interface BlogPostProps {
-  post: string;
+interface BlogPostPageProps {
+  params: { post: string };
 }
 
-const BlogPost = ({ post }: BlogPostProps) => {
-  console.log(post);
-  return <BlogPostLoadingSkeleton />;
-};
+const BlogPostPage = ({ params }: BlogPostPageProps) => (
+  <Suspense fallback={<BlogPostLoadingSkeleton />}>
+    <BlogPost post={params.post} />
+  </Suspense>
+);
 
-export default BlogPost;
+export default BlogPostPage;
