@@ -1,9 +1,10 @@
-import { Section, Typography } from "@portfolio/components";
+import { Card, CardActions, CardContent, CardHeader, Section, Typography } from "@portfolio/components";
 import Navbar from "@portfolio/components/navbar";
 
 interface Project {
   title: string;
   description: string;
+  link?: string;
 }
 
 const projects: Project[] = [
@@ -89,28 +90,56 @@ const Showcase = () => {
         </Typography>
       </Section>
       <Section id="project-list" variant="thick" className="py-12">
-        <Typography variant="h3" className="py-6">
-          Coming Soon...
-        </Typography>
-        <ul className="pl-6">
-          {projects.map((project, index) => (
-            <li key={index}>
-              <Typography variant="h4" className="py-3">{project.title}</Typography>
-              <Typography className="pl-6">{project.description}</Typography>
-            </li>
+        <div className="pl-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 lg:gap-8">
+          {projects.map((project) => (
+            <Card className="flex flex-col" key={project.title.replace(" ", "_")}>
+              <CardHeader>{project.title}</CardHeader>
+              <CardContent>
+                <Typography className="mb-3 font-normal text-gray-700 dark:text-gray-400">{project.description}</Typography>
+              </CardContent>
+              <CardActions>
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    Read More
+                  </a>
+                ) : (
+                  <span className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Coming Soon...
+                  </span>
+                )}
+              </CardActions>
+            </Card>
           ))}
-        </ul>
-        <Typography variant="h3" className="py-6 pl-6">
-          Nx Series
-        </Typography>
-        <ul className="pl-12">
-          {nxSeries.map((project, index) => (
-            <li key={index}>
-              <Typography variant="h4" className="py-3">{project.title}</Typography>
-              <Typography className="pl-6">{project.description}</Typography>
-            </li>
+          {nxSeries.map((project) => (
+            <Card className="flex flex-col" key={project.title.replace(" ", "_")}>
+              <CardHeader>Nx Series: {project.title}</CardHeader>
+              <CardContent>
+                <Typography className="mb-3 font-normal text-gray-700 dark:text-gray-400">{project.description}</Typography>
+              </CardContent>
+              <CardActions>
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    Read More
+                  </a>
+                ) : (
+                  <span className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Coming Soon...
+                  </span>
+                )}
+              </CardActions>
+            </Card>
           ))}
-        </ul>
+        </div>
       </Section>
     </>
   );

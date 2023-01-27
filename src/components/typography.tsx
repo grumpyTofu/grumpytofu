@@ -1,6 +1,6 @@
 type TypographyVariant = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p";
 
-interface TypographyProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement> {
+export interface TypographyProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement> {
   variant?: TypographyVariant;
   children?: React.ReactNode;
 }
