@@ -5,12 +5,26 @@ import { Typography, TypographyProps } from "./typography";
 interface CardProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   children?: React.ReactNode;
   variant?: GlassVariants;
+  growOnHover?: boolean;
 }
 
-export const Card = ({ children, variant = "thick", className, ...props }: CardProps) => {
-  let classes = "max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700";
-  classes += variant === "default" ? " glass" : ` glass-${variant}`;
+export const Card = ({ children, variant = "thick", className, growOnHover, ...props }: CardProps) => {
+  let classes = "p-6 border border-gray-200 rounded-lg dark:border-gray-700";
+
+  switch (variant) {
+    case "transparant":
+      classes += ` !border-2`;
+      break;
+    default:
+      classes += variant === "default" ? " glass" : ` glass-${variant}`;
+      classes += ` bg-white shadow dark:bg-gray-800`;
+      break;
+  }
+
+  if (growOnHover) classes += ` transition duration-500 hover:scale-105`;
+
   if (className) classes += ` ${className}`;
+
   return (
     <div {...props} className={classes}>
       {children}

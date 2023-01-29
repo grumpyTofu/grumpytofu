@@ -1,9 +1,55 @@
 import React from "react";
 import { Section, Typography } from "@portfolio/components";
 import Navbar from "@portfolio/components/navbar";
-import Link from "next/link";
+import Contact from "../contact";
+import InfoSection, { InfoSectionProps } from "./infoSection";
 
-const services = ["Custom application development", "Architectural design and consultation", "and more..."];
+// const services = ["Custom application development", "Architectural design and consultation", "and more..."];
+const infoSections: InfoSectionProps[] = [
+  {
+    title: "Services",
+    content: (
+      <ul>
+        <li>Healthcare</li>
+        <li>Finance</li>
+        <li>Retail</li>
+        <li>Government</li>
+        <li>Transportation and logistics</li>
+        <li>Cybersecurity</li>
+        <li>Technology</li>
+      </ul>
+    ),
+    link: "/showcase",
+  },
+  {
+    title: "Industries",
+    content: (
+      <ul>
+        <li>Healthcare</li>
+        <li>Finance</li>
+        <li>Retail</li>
+        <li>Government</li>
+        <li>Transportation and logistics</li>
+        <li>Cybersecurity</li>
+        <li>Technology</li>
+      </ul>
+    ),
+    link: "/showcase",
+  },
+  {
+    title: "Technologies",
+    content: (
+      <ul>
+        <li>JavaScript & Typescript (React, Angular, Node.js)</li>
+        <li>C# (.NET)</li>
+        <li>Python</li>
+        <li>Cloud platforms (AWS, Azure, Google Cloud)</li>
+        <li>Databases (MongoDB, PostgreSQL, MSSQL, and more)</li>
+      </ul>
+    ),
+    link: "/showcase",
+  },
+];
 
 const Services = () => {
   return (
@@ -19,45 +65,14 @@ const Services = () => {
           Python, C#/.NET, and SQL. I am passionate about architecting and developing user-friendly, scalable, and secure systems.
         </Typography>
       </Section>
-      <Section id="services" variant="thick">
-        <Typography variant="h2">Services Offered</Typography>
-        <ul>
-          <li>Custom software development</li>
-          <li>Web and mobile app development</li>
-          <li>E-commerce development</li>
-          <li>Cloud-based solutions</li>
-          <li>UI/UX design</li>
-          <li>Maintenance and support</li>
-          <li>Quality assurance and testing</li>
-        </ul>
+      <Section id="services" variant="thick" className="pt-12 pb-24">
+        <div className="pt-12 pb-24 px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 lg:gap-8">
+          {infoSections.map((section, i) => (
+            <InfoSection title={section.title} content={section.content} link={section.link} key={section.title} />
+          ))}
+        </div>
       </Section>
-      <Section id="industries">
-        <Typography variant="h2">Industries Served</Typography>
-        <ul>
-          <li>Healthcare</li>
-          <li>Finance</li>
-          <li>Retail</li>
-          <li>Government</li>
-          <li>Transportation and logistics</li>
-          <li>Cybersecurity</li>
-          <li>Technology</li>
-        </ul>
-      </Section>
-      <Section id="tech" variant="thick">
-        <Typography variant="h2">Technologies Used</Typography>
-        <ul>
-          <li>JavaScript & Typescript (React, Angular, Node.js)</li>
-          <li>C# (.NET)</li>
-          <li>Python (Django, Flask)</li>
-          <li>Cloud platforms (AWS, Azure, Google Cloud)</li>
-          <li>Databases (MySQL, MongoDB, PostgreSQL, Oracle)</li>
-        </ul>
-      </Section>
-      <Section id="contact">
-        <Typography variant="h2">Contact</Typography>
-        <Typography>Ready to dive in?</Typography>
-        <Link href="/contact">Contact</Link>
-      </Section>
+      <Contact />
     </>
   );
 };
