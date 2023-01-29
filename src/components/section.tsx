@@ -10,7 +10,7 @@ export interface SectionProps extends React.DetailedHTMLProps<React.HTMLAttribut
 }
 
 export const Section = ({ children, id, className, dark = false, variant = "default", wrapperClasses, ...props }: SectionProps) => {
-  let sectionClasses = "min-h-[80vh] flex items-center";
+  let sectionClasses = "min-h-[80vh] flex items-center relative";
 
   switch (variant) {
     case "transparant":

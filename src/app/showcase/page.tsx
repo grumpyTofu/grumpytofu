@@ -1,5 +1,6 @@
 import { Card, CardActions, CardContent, CardHeader, Section, Typography } from "@portfolio/components";
 import Navbar from "@portfolio/components/navbar";
+import Contact from "../contact";
 
 interface Project {
   title: string;
@@ -89,7 +90,7 @@ const Showcase = () => {
           Projects - Case Studies
         </Typography>
       </Section>
-      <Section id="project-list" variant="thick" className="py-12">
+      <Section id="project-list" variant="thick" className="pt-14 pb-[12rem]">
         <div className="pl-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 lg:gap-8">
           {projects.map((project) => (
             <Card className="flex flex-col" key={project.title.replace(" ", "_")}>
@@ -141,6 +142,7 @@ const Showcase = () => {
           ))}
         </div>
       </Section>
+      <Contact />
     </>
   );
 };
