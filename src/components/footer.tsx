@@ -6,7 +6,7 @@ interface FooterProps extends Partial<HTMLDivElement> {
 }
 
 const Footer = ({ className }: FooterProps) => {
-  let classes = "dark grid grid-cols-8 gap-4 p-12 glass-frosted pt-[5rem]";
+  let classes = "dark grid grid-cols-8 gap-4 p-12 glass-frosted pt-[8rem]";
   if (className) classes += ` ${className}`;
   return (
     <footer className={classes}>
