@@ -14,7 +14,9 @@ const Services = () => {
             <Image src="/developer-2.webp" alt="Developer Illustration" quality={100} height={414} width={508} />
           </div>
           <div className="flex flex-col justify-center ml-auto w-full lg:w-9/12">
-            <Typography variant="h2" className="mb-6">Development Services</Typography>
+            <Typography variant="h2" className="mb-6">
+              Development Services
+            </Typography>
             <p className="my-2 text-black-500">I provide custom development services tailored to meet your business needs</p>
             <ul className="text-black-500 self-start list-inside ml-8">
               {services.map((service, index) => (
