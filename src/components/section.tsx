@@ -1,6 +1,4 @@
 import React from "react";
-// import type { GlassVariants } from "../types";
-// import styles from './section.module.scss';
 import { GlassVariants } from "@portfolio/types";
 
 export interface SectionProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
@@ -26,9 +24,12 @@ export const Section = ({ children, id, className, dark = false, variant = "defa
 
   if (className) sectionClasses += ` ${className}`;
 
+  let wrapperClassName = "block w-full px-12";
+  if (wrapperClasses) wrapperClassName += ` ${wrapperClasses}`;
+
   return (
     <section {...props} id={id} className={sectionClasses}>
-      <div className={`${wrapperClasses} block w-full px-12`}>{children}</div>
+      <div className={wrapperClassName}>{children}</div>
     </section>
   );
 };

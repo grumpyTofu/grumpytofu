@@ -3,25 +3,7 @@ import Image from "next/image";
 import { Section, Typography } from "@portfolio/components";
 import Link from "next/link";
 
-const About = ({
-  listUser = [
-    {
-      name: "Users",
-      number: "390",
-      icon: "/assets/Icon/heroicons_sm-user.svg",
-    },
-    {
-      name: "Locations",
-      number: "20",
-      icon: "/assets/Icon/gridicons_location.svg",
-    },
-    {
-      name: "Server",
-      number: "50",
-      icon: "/assets/Icon/bx_bxs-server.svg",
-    },
-  ],
-}) => {
+const About = () => {
   return (
     <Section id="about">
       <div className="max-w-screen-xl px-8 xl:px-16 mx-auto">
@@ -30,10 +12,8 @@ const About = ({
             <Typography variant="h2" className="!font-medium leading-normal">
               About Me
             </Typography>
-            <Typography className="mt-4 mb-6">
-              I am a Software Engineer with experience architecting, developing, and managing enterprise applications. I specialize in web application
-              development using Full-stack Javascript/Typescript (React & Node.js). I also have experience working with other tech stacks including
-              Python, C#/.NET, and SQL. I am passionate about architecting and developing user-friendly, scalable, and secure systems.
+            <Typography className="my-6">
+              Welcome to my portfolio website, where the coding connoisseur and the recipe developer come together to whip up a dish of success!
             </Typography>
             <Link href="/about">Learn More</Link>
           </div>
