@@ -1,5 +1,6 @@
 import { Section, Typography } from "@portfolio/components";
 import Navbar from "@portfolio/components/navbar";
+import Contact from "../contact";
 import Showcase from "../showcase";
 
 const About = () => {
@@ -36,6 +37,7 @@ const About = () => {
         </Typography>
       </Section>
       <Showcase />
+      <Contact />
     </>
   );
 };
