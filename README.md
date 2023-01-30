@@ -51,11 +51,13 @@ It looks like you have made it to my github. I am a software engineer with a spe
 <a target="_blank" rel="noopener noreferrer" href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" /></a>
 <span><img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=MicrosoftSQLServer&logoColor=white" /></span>
 
-### Cloud Providers:
+### Cloud Technologies:
 <br />
 
+<a target="_blank" rel="noopener noreferrer" href="https://www.terraform.io/"><img alt="Terraform" src="https://img.shields.io/badge/terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white"/></a>
 <a target="_blank" rel="noopener noreferrer" href="https://aws.amazon.com"><img alt="AWS" src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/></a>
 <a target="_blank" rel="noopener noreferrer" href="https://azure.microsoft.com/en-us/"><img alt="Azure" src="https://img.shields.io/badge/Microsoft_Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white"/></a>
+<a target="_blank" rel="noopener noreferrer" href="https://vercel.com/"><img alt="Vercel" src="https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"/></a>
 <a target="_blank" rel="noopener noreferrer" href="https://cloud.google.com/gcp"><img alt="Google Cloud" src="https://img.shields.io/badge/Microsoft_Azure-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white"/></a>
 
 ### Blockchain:
