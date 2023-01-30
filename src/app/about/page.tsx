@@ -12,7 +12,7 @@ const About = () => {
           Welcome to my portfolio website!
         </Typography>
       </Section>
-      <Section id="about" variant="thick" className="px-12">
+      <Section id="about" variant="thick" className="py-12 px-3">
         <Typography variant="h2" className="!font-medium leading-normal text-center mb-3">
           About Me
         </Typography>
