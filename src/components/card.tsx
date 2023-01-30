@@ -21,7 +21,7 @@ export const Card = ({ children, variant = "thick", className, growOnHover, ...p
       break;
   }
 
-  if (growOnHover) classes += ` transition duration-500 hover:scale-105`;
+  if (growOnHover) classes += ` lg:transition lg:duration-500 lg:hover:scale-105`;
 
   if (className) classes += ` ${className}`;
 

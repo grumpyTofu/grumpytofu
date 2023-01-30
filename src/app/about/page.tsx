@@ -20,7 +20,7 @@ const About = () => {
           <hr className="mb-12 border-solid border-gray-500 w-1/12" />
         </div>
         <Typography className="mb-6 indent-6">
-          I am a Software Engineer with experience architecting, developing, and managing enterprise applications. I specialize in web application
+          My name is Austin, and I am a Software Engineer with experience architecting, developing, and managing enterprise applications. I specialize in web application
           development using Full-stack Javascript/Typescript (React & Node.js). I also have experience working with other tech stacks including
           Python, C#/.NET, and SQL. I am passionate about architecting and developing user-friendly, scalable, and secure systems.
         </Typography>
