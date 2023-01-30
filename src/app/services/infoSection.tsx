@@ -16,7 +16,7 @@ const InfoSection = ({ title, content, link }: InfoSectionProps) => {
 
   return (
     <Card className="flex flex-col col-span-1" variant="transparant" growOnHover>
-      <div data-link={link} onClick={handleClick}>
+      <div data-link={link} onClick={handleClick} className="contents">
         <CardHeader>{title}</CardHeader>
         <CardContent>{content}</CardContent>
         <CardActions>
