@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Script from "next/script";
-import { Suspense, useEffect } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID;
 
@@ -25,13 +25,17 @@ class Gtag {
 }
 
 export const GoogleAnalytics = () => {
+  const [loaded, setLoaded] = useState<boolean>(false);
+
   const pathname = usePathname();
 
   const handleRouteChange = (pathname: string) => {
     Gtag.pageview(pathname);
   };
 
-  useEffect(() => handleRouteChange(pathname || ""), [pathname]);
+  useEffect(() => {
+    if (loaded) handleRouteChange(pathname || "");
+  }, [loaded, pathname]);
 
   return (
     <Suspense fallback={<></>}>
@@ -50,6 +54,7 @@ export const GoogleAnalytics = () => {
             });
           `,
         }}
+        onLoad={() => setLoaded(true)}
       />
     </Suspense>
   );
