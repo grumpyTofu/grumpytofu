@@ -6,23 +6,18 @@ import { Suspense, useEffect, useState } from "react";
 
 export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID;
 
-class Gtag {
-  // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
-  static pageview(url: string) {
-    window.gtag("config", GA_TRACKING_ID, {
-      page_path: url,
-    });
-  }
-
-  // https://developers.google.com/analytics/devguides/collection/gtagjs/events
-  static event({ action, category, label, value }: any) {
-    window.gtag("event", action, {
-      event_category: category,
-      event_label: label,
-      value: value,
-    });
-  }
-}
+export const pageview = (url: string) => {
+  window.gtag("config", GA_TRACKING_ID, {
+    page_path: url,
+  });
+};
+export const event = ({ action, category, label, value }: any) => {
+  window.gtag("event", action, {
+    event_category: category,
+    event_label: label,
+    value,
+  });
+};
 
 export const GoogleAnalytics = () => {
   const [loaded, setLoaded] = useState<boolean>(false);
@@ -30,7 +25,7 @@ export const GoogleAnalytics = () => {
   const pathname = usePathname();
 
   const handleRouteChange = (pathname: string) => {
-    Gtag.pageview(pathname);
+    pageview(pathname);
   };
 
   useEffect(() => {
@@ -49,9 +44,8 @@ export const GoogleAnalytics = () => {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
+            
+            gtag('config', 'G-428LF2BSVJ');
           `,
         }}
         onLoad={() => setLoaded(true)}
