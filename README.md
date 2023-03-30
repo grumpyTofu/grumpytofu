@@ -10,7 +10,6 @@ It looks like you have made it to my github. I am a software engineer with a spe
 
 <br />
 
----
 ## 🛠 Things I code with:
 
 <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=grumpyTofu&theme=blue-green" /> -->
@@ -18,9 +17,6 @@ It looks like you have made it to my github. I am a software engineer with a spe
 <!-- ultimate readme theming guide: https://dev.to/envoy_/150-badges-for-github-pnk -->
 <!-- icon api provider: https://shields.io/ -->
 <!-- icon ref: https://simpleicons.org/ -->
-
---- 
-<br />
 
 ### Frontend:
 <br />
@@ -58,7 +54,7 @@ It looks like you have made it to my github. I am a software engineer with a spe
 <a target="_blank" rel="noopener noreferrer" href="https://aws.amazon.com"><img alt="AWS" src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/></a>
 <a target="_blank" rel="noopener noreferrer" href="https://azure.microsoft.com/en-us/"><img alt="Azure" src="https://img.shields.io/badge/Microsoft_Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white"/></a>
 <a target="_blank" rel="noopener noreferrer" href="https://vercel.com/"><img alt="Vercel" src="https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"/></a>
-<a target="_blank" rel="noopener noreferrer" href="https://cloud.google.com/gcp"><img alt="Google Cloud" src="https://img.shields.io/badge/Microsoft_Azure-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white"/></a>
+<a target="_blank" rel="noopener noreferrer" href="https://cloud.google.com/gcp"><img alt="Google Cloud" src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white"/></a>
 
 ### Blockchain:
 <br />
@@ -68,9 +64,7 @@ It looks like you have made it to my github. I am a software engineer with a spe
 
 <br/>
 
----
 ## 🤝🏻 Where to find me
----
 <br/>
 
 <p>
