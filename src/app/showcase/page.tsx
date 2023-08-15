@@ -91,7 +91,7 @@ const Showcase = () => {
         </Typography>
       </Section>
       <Section id="project-list" variant="thick" className="pt-14 pb-[12rem]">
-        <div className="pl-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 lg:gap-8">
+        {/* <div className="pl-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 lg:gap-8">
           {projects.map((project) => (
             <Card className="flex flex-col" key={project.title.replace(" ", "_")}>
               <CardHeader>{project.title}</CardHeader>
@@ -140,7 +140,8 @@ const Showcase = () => {
               </CardActions>
             </Card>
           ))}
-        </div>
+        </div> */}
+        <Typography className="text-center">Under construction...</Typography>
       </Section>
       <Contact />
     </>
