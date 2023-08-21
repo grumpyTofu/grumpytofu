@@ -67,6 +67,10 @@ p {
   @apply text-xl sm:text-lg md:text-base;
 }
 
+a {
+  @apply text-xl sm:text-lg md:text-base;
+}
+
 .glass-light {
   background: rgba(55, 65, 81, 0.5);
   backdrop-filter: blur(3.5px);

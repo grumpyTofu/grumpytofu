@@ -1,6 +1,7 @@
 import { Card, CardActions, CardContent, CardHeader, Section, Typography } from "@portfolio/components";
 import Navbar from "@portfolio/components/navbar";
 import Contact from "../contact";
+import { Link } from "@portfolio/components/Link";
 
 interface Project {
   title: string;
@@ -141,7 +142,13 @@ const Showcase = () => {
             </Card>
           ))}
         </div> */}
-        <Typography className="text-center">Under construction...</Typography>
+        <Typography variant="h3" className="text-center mb-12">Under construction...</Typography>
+        <Typography className="text-center">
+          Sorry about that! Until construction is finished, please feel free to check out my{" "}
+          <Link href="https://github.com/grumpyTofu" external className="underline">
+            github!
+          </Link>
+        </Typography>
       </Section>
       <Contact />
     </>
