@@ -1,14 +1,13 @@
-import React from "react";
-import type { GlassVariants } from "@portfolio/types";
-import { Typography, TypographyProps } from "./typography";
+import type { JSX, ParentComponent } from "solid-js";
+import type { GlassVariants } from "../../legacy/src/types";
+import { Typography, type TypographyProps } from "./Typography";
 
-interface CardProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-  children?: React.ReactNode;
+interface CardProps extends JSX.DetailsHtmlAttributes<HTMLDivElement> {
   variant?: GlassVariants;
   growOnHover?: boolean;
 }
 
-export const Card = ({ children, variant = "thick", className, growOnHover, ...props }: CardProps) => {
+export const Card: ParentComponent<CardProps> = ({ children, variant = "thick", growOnHover, ...props }) => {
   let classes = "p-6 border border-gray-200 rounded-lg dark:border-gray-700";
 
   switch (variant) {
@@ -23,42 +22,33 @@ export const Card = ({ children, variant = "thick", className, growOnHover, ...p
 
   if (growOnHover) classes += ` lg:transition lg:duration-500 lg:hover:scale-105`;
 
-  if (className) classes += ` ${className}`;
+  if (props.class) classes += ` ${props.class}`;
 
   return (
-    <div {...props} className={classes}>
+    <div {...props} class={classes}>
       {children}
     </div>
   );
 };
 
-interface CardHeaderProps extends TypographyProps {
-  children: React.ReactNode;
-}
-export const CardHeader = ({ children, className, variant = "h5" }: CardHeaderProps) => {
+export const CardHeader: ParentComponent<TypographyProps> = ({ children, variant = "h5", ...props }) => {
   let classes = "py-3 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pb-6";
-  if (className) classes += ` ${className}`;
+  if (props.class) classes += ` ${props.class}`;
   return (
-    <Typography variant={variant} className={classes}>
+    <Typography variant={variant} class={classes}>
       {children}
     </Typography>
   );
 };
 
-interface CardContentProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-  children: React.ReactNode;
-}
-export const CardContent = ({ children, className }: CardContentProps) => {
+export const CardContent: ParentComponent<JSX.DetailsHtmlAttributes<HTMLDivElement>> = (props) => {
   let classes = "flex-grow";
-  if (className) classes += ` ${className}`;
-  return <div className={classes}>{children}</div>;
+  if (props.class) classes += ` ${props.class}`;
+  return <div class={classes}>{props.children}</div>;
 };
 
-interface CardActionsProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-  children: React.ReactNode;
-}
-export const CardActions = ({ children, className }: CardActionsProps) => {
+export const CardActions: ParentComponent<JSX.DetailsHtmlAttributes<HTMLDivElement>> = (props) => {
   let classes = "flex items-end justify-end pt-6";
-  if (className) classes += ` ${className}`;
-  return <div className="flex items-end justify-end pt-6">{children}</div>;
+  if (props.class) classes += ` ${props.class}`;
+  return <div class="flex items-end justify-end pt-6">{props.children}</div>;
 };

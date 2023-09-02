@@ -1,25 +1,30 @@
-// import { LoadingSpinner, LoadingSpinnerContext } from "./spinner";
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useContext } from "react";
+
+import { LoadingSpinner, LoadingSpinnerContext } from "./spinner";
 
 const Navbar = () => {
-  // const { loading } = useContext(LoadingSpinnerContext);
-
-  const { pathname } = window.location;
+  const { loading } = useContext(LoadingSpinnerContext);
+  const pathname = usePathname();
 
   return (
-    <nav class="fixed top-0 flex w-full p-6 glass-thick z-30">
+    <nav className="fixed top-0 flex w-full p-6 glass-thick z-30">
       <div>
         {pathname === "/contact" ? (
-          <a href="/" class="text-2xl md:text-md">
+          <a href="/" className="text-2xl md:text-md">
             GrumpyTofu
           </a>
         ) : (
-          <a href="/" class="text-2xl md:text-md">
+          <Link href="/" className="text-2xl md:text-md">
             GrumpyTofu
-          </a>
+          </Link>
         )}
       </div>
-      <div class="flex-grow"></div>
-      {/* <div>
+      <div className="flex-grow"></div>
+      <div>
         {loading ? (
           <LoadingSpinner />
         ) : (
@@ -36,7 +41,7 @@ const Navbar = () => {
             </svg>
           </a>
         )}
-      </div> */}
+      </div>
     </nav>
   );
 };
