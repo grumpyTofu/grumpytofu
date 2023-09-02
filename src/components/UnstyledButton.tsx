@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { createSignal, type JSX, Match, Switch } from 'solid-js';
 
 export type DefaultButtonProps =
@@ -19,6 +20,7 @@ export type DefaultButtonProps =
 type UnstyledButtonProps = DefaultButtonProps & {
   class?: string;
   children: (renderProps: { loading?: boolean }) => JSX.Element;
+  disabled?: boolean;
 };
 
 /**
@@ -62,7 +64,7 @@ export function UnstyledButton(props: UnstyledButtonProps) {
                 });
               }
             }}
-            disabled={getLoading()}
+            disabled={props.disabled ?? getLoading()}
           >
             {props.children({
               get loading() {
@@ -76,7 +78,7 @@ export function UnstyledButton(props: UnstyledButtonProps) {
       {/* Submit button */}
       <Match when={props.type === 'submit' && props} keyed>
         {(submit) => (
-          <button class={props.class} type="submit" disabled={submit.loading}>
+          <button class={clsx(props.class, props.disabled && '!bg-slate-500')} type="submit" disabled={props.disabled ?? submit.loading}>
             {props.children({
               get loading() {
                 return submit.loading;

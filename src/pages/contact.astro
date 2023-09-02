@@ -2,12 +2,17 @@
 import { Card } from '../components';
 import { ContactForm, Section } from '../components';
 import Layout from '../layouts/Layout.astro';
+
+const grecaptchaKeyId = import.meta.env.PUBLIC_GRECAPTCHA_KEY_ID;
 ---
 
 <Layout>
   <Section id="contact" wrapperClasses="mt-12">
-    <Card class="!bg-slate-800">
+    <Card class="!bg-slate-800 my-[5rem] py-12 px-8">
       <ContactForm client:only />
     </Card>
   </Section>
 </Layout>
+
+<script is:inline src=`https://www.google.com/recaptcha/enterprise.js?render=${grecaptchaKeyId}`
+></script>

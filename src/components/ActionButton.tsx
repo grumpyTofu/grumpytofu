@@ -6,6 +6,7 @@ import { UnstyledButton, type DefaultButtonProps } from './UnstyledButton';
 type ActionButtonProps = DefaultButtonProps & {
   variant: 'primary' | 'secondary';
   label: string;
+  disabled?: boolean;
 };
 
 /**
