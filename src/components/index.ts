@@ -9,3 +9,5 @@ export * from './home/Services';
 
 export * from './services/InfoSection';
 export * from './services/InfoSectionList';
+
+export * from './contact/ContactForm';

@@ -1,0 +1,13 @@
+---
+import { Card } from '../components';
+import { ContactForm, Section } from '../components';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <Section id="contact" wrapperClasses="mt-12">
+    <Card class="!bg-slate-800">
+      <ContactForm client:only />
+    </Card>
+  </Section>
+</Layout>

@@ -12,7 +12,11 @@
   "dependencies": {
     "@astrojs/solid-js": "^3.0.0",
     "@astrojs/tailwind": "^5.0.0",
+    "@modular-forms/solid": "^0.19.2",
+    "@solid-primitives/event-listener": "^2.3.0",
+    "@solid-primitives/utils": "^6.2.1",
     "astro": "^3.0.7",
+    "clsx": "^2.0.0",
     "solid-js": "^1.7.11",
     "tailwindcss": "^3.3.3"
   }
