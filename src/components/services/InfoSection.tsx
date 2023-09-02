@@ -9,11 +9,7 @@ export interface InfoSectionProps {
   link: string;
 }
 
-export const InfoSection: ParentComponent<InfoSectionProps> = ({
-  title,
-  content,
-  link,
-}) => {
+export const InfoSection: ParentComponent<InfoSectionProps> = ({ title, content, link }) => {
   return (
     <Card class="flex flex-col col-span-1" variant="transparant" growOnHover>
       <a href={link} class="contents">

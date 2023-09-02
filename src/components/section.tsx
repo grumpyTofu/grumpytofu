@@ -1,5 +1,5 @@
-import type { JSX, ParentComponent } from "solid-js";
-import type { GlassVariants } from "../../legacy/src/types";
+import type { JSX, ParentComponent } from 'solid-js';
+import type { GlassVariants } from '../../legacy/src/types';
 
 export interface SectionProps extends JSX.DetailsHtmlAttributes<HTMLElement> {
   id: string;
@@ -12,17 +12,17 @@ export const Section: ParentComponent<SectionProps> = ({
   children,
   id,
   dark = false,
-  variant = "default",
+  variant = 'default',
   wrapperClasses,
   ...props
 }: SectionProps) => {
-  let sectionClasses = "min-h-[80vh] flex items-center relative";
+  let sectionClasses = 'min-h-[80vh] flex items-center relative';
 
   switch (variant) {
-    case "transparant":
+    case 'transparant':
       break;
-    case "default":
-      sectionClasses += " glass";
+    case 'default':
+      sectionClasses += ' glass';
       break;
     default:
       sectionClasses += ` glass-${variant}`;
@@ -30,7 +30,7 @@ export const Section: ParentComponent<SectionProps> = ({
 
   if (props.class) sectionClasses += ` ${props.class}`;
 
-  let wrapperClassName = "block w-full px-12";
+  let wrapperClassName = 'block w-full px-12';
   if (wrapperClasses) wrapperClassName += ` ${wrapperClasses}`;
 
   return (

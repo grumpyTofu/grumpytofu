@@ -1,4 +1,4 @@
-import { Section, Typography } from "..";
+import { Section, Typography } from '..';
 // import ShowcaseItem from "./showcaseItem";
 
 export const Showcase = () => {
@@ -11,8 +11,7 @@ export const Showcase = () => {
               Showcase
             </Typography>
             <p class="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center">
-              Check out some examples of applications that I have developed for
-              clients
+              Check out some examples of applications that I have developed for clients
             </p>
             {/* <ShowcaseItem /> */}
             <a href="/showcase" class="mt-12">

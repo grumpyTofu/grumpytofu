@@ -1,5 +1,5 @@
-import { Section } from "../Section";
-import { Typography } from "../Typography";
+import { Section } from '../Section';
+import { Typography } from '../Typography';
 
 export const About = () => {
   return (
@@ -11,19 +11,14 @@ export const About = () => {
               About Me
             </Typography>
             <Typography class="my-6">
-              Welcome to my portfolio website, where the coding connoisseur and
-              the recipe developer come together to whip up a dish of success!
+              Welcome to my portfolio website, where the coding connoisseur and the recipe developer
+              come together to whip up a dish of success!
             </Typography>
             <a href="/about">Learn More</a>
           </div>
           <div class="flex w-full">
             <div class="h-full w-full flex justify-center items-center">
-              <img
-                src="/developer-1.webp"
-                alt="Developer Illustration"
-                width={612}
-                height={383}
-              />
+              <img src="/developer-1.webp" alt="Developer Illustration" width={612} height={383} />
             </div>
           </div>
         </div>

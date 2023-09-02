@@ -54,11 +54,7 @@ const infoSections: InfoSectionProps[] = [
 export const InfoSectionList = () => (
   <For each={infoSections}>
     {(section) => (
-      <InfoSection
-        title={section.title}
-        content={section.content}
-        link={section.link}
-      />
+      <InfoSection title={section.title} content={section.content} link={section.link} />
     )}
   </For>
 );
