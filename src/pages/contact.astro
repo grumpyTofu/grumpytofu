@@ -7,8 +7,8 @@ const grecaptchaKeyId = import.meta.env.PUBLIC_GRECAPTCHA_KEY_ID;
 ---
 
 <Layout>
-  <Section id="contact" wrapperClasses="mt-12">
-    <Card class="!bg-slate-800 my-[5rem] py-12 px-8">
+  <Section id="contact" class="justify-center" wrapperClasses="mt-12">
+    <Card class="!bg-slate-800 my-[5rem] mx-auto py-12 px-8 max-w-4xl">
       <ContactForm client:only />
     </Card>
   </Section>

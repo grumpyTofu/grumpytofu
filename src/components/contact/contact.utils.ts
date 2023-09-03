@@ -1,4 +1,4 @@
-import { FormError, type SubmitHandler } from '@modular-forms/solid';
+import { createForm, FormError, reset, type SubmitHandler } from '@modular-forms/solid';
 import { ToastError, createToast, setLoading, setToken, toasts, token } from '../../store';
 
 const grecaptchaKeyId = import.meta.env.PUBLIC_GRECAPTCHA_KEY_ID;
@@ -8,6 +8,8 @@ export type ContactForm = {
   email: string;
   message: string;
 };
+
+export const [contactForm, { Form, Field }] = createForm<ContactForm>();
 
 export const submitContactForm: SubmitHandler<ContactForm> = async (values) => {
   setLoading(true);
@@ -31,6 +33,9 @@ export const submitContactForm: SubmitHandler<ContactForm> = async (values) => {
         throw new ToastError(result.message);
       throw result;
     }
+
+    reset(contactForm);
+    createToast({ id: nextToastId, variant: 'message', message: 'Message sent successfully' });
   } catch (error) {
     if (!error || typeof error !== 'object') {
       createToast({

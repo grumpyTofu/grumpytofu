@@ -5,8 +5,6 @@ export const POST: APIRoute = async ({ request }) => {
   try {
     const grecaptchaToken = request.headers.get('authorization');
 
-    throw new Error('debug');
-
     const grecaptchaBaseUrl = 'https://www.google.com/recaptcha/api/siteverify';
     const grecaptchaUrl = `${grecaptchaBaseUrl}?secret=${
       import.meta.env.GRECAPTCHA_SECRET
@@ -32,11 +30,11 @@ export const POST: APIRoute = async ({ request }) => {
       return new Response(JSON.stringify({ message, type: 'toast-error' }), { status: 401 });
     }
 
-    if (grecaptchaVerifyResult.score < 0.7) {
-      return new Response(JSON.stringify({ message: 'Captcha Failed', type: 'toast-error' }), {
-        status: 401,
-      });
-    }
+    // if (grecaptchaVerifyResult.score < 0.7) {
+    //   return new Response(JSON.stringify({ message: 'Captcha Failed', type: 'toast-error' }), {
+    //     status: 401,
+    //   });
+    // }
 
     const { name, email, message } = (await request.json()) as ContactRequest;
 
