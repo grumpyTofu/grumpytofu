@@ -8,6 +8,14 @@ import { createToast, setToken, toasts, token } from '../../store';
 const grecaptchaKeyId = import.meta.env.PUBLIC_GRECAPTCHA_KEY_ID;
 
 export const ContactForm = () => {
+  const isDisabled = () => {
+    if (!token()) {
+      return true;
+    } else {
+      return contactForm.dirty && contactForm.touched ? contactForm.invalid : true;
+    }
+  };
+
   onMount(() => {
     window.grecaptcha.enterprise.ready(async () => {
       try {
@@ -102,12 +110,7 @@ export const ContactForm = () => {
           type="button"
           onClick={() => reset(contactForm)}
         />
-        <ActionButton
-          variant="primary"
-          label="Submit"
-          type="submit"
-          disabled={!token() || (!contactForm.dirty && !contactForm.touched && contactForm.invalid)}
-        />
+        <ActionButton variant="primary" label="Submit" type="submit" disabled={isDisabled()} />
       </div>
     </Form>
   );
