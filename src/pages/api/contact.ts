@@ -1,9 +1,11 @@
 import type { APIRoute } from 'astro';
 import type { ContactRequest } from '../../types/contact';
 
-export const GET: APIRoute = async ({ request }) => {
+export const POST: APIRoute = async ({ request }) => {
   try {
     const grecaptchaToken = request.headers.get('authorization');
+
+    throw new Error('debug');
 
     const grecaptchaBaseUrl = 'https://www.google.com/recaptcha/api/siteverify';
     const grecaptchaUrl = `${grecaptchaBaseUrl}?secret=${

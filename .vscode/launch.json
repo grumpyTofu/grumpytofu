@@ -6,7 +6,7 @@
       "name": "Dev",
       "request": "launch",
       "type": "node-terminal",
-      "outputCapture": "console"
+      "outputCapture": "console",
     }
   ]
 }

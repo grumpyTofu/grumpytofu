@@ -62,7 +62,7 @@ export function TextField(props: TextInputProps) {
           rows={props.rows}
           class={clsx(
             props.class,
-            'h-[20vh] w-full rounded-2xl border-2 bg-white px-5 outline-none placeholder:text-slate-500 dark:bg-gray-900 md:h-[20vh] md:text-lg lg:h-[70px] lg:px-6 lg:text-xl',
+            'h-[20vh] w-full rounded-2xl border-2 bg-white p-5 outline-none placeholder:text-slate-500 dark:bg-gray-900 md:h-[20vh] md:text-lg lg:h-[70px] lg:px-6 lg:text-xl',
             props.error
               ? 'border-red-600/50 dark:border-red-400/50'
               : 'border-slate-200 hover:border-slate-300 focus:border-sky-600/50 dark:border-slate-800 dark:hover:border-slate-700 dark:focus:border-sky-400/50'

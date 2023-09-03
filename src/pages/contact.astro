@@ -1,6 +1,6 @@
 ---
 import { Card } from '../components';
-import { ContactForm, Section } from '../components';
+import { ContactForm, Section, ToastContainer } from '../components';
 import Layout from '../layouts/Layout.astro';
 
 const grecaptchaKeyId = import.meta.env.PUBLIC_GRECAPTCHA_KEY_ID;
@@ -12,6 +12,7 @@ const grecaptchaKeyId = import.meta.env.PUBLIC_GRECAPTCHA_KEY_ID;
       <ContactForm client:only />
     </Card>
   </Section>
+  <ToastContainer client:only />
 </Layout>
 
 <script is:inline src=`https://www.google.com/recaptcha/enterprise.js?render=${grecaptchaKeyId}`
