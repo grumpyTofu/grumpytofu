@@ -1,5 +1,5 @@
-export * from './Card';
-export * from './Section';
+export * from './card';
+export * from './section';
 export * from './Typography';
 
 export * from './home/About';
