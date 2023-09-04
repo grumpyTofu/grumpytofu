@@ -1,5 +1,5 @@
 import type { JSX, ParentComponent } from 'solid-js';
-import type { GlassVariants } from '../../legacy/src/types';
+import type { GlassVariants } from '../types';
 
 export interface SectionProps extends JSX.DetailsHtmlAttributes<HTMLElement> {
   id: string;

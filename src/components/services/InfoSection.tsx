@@ -1,7 +1,7 @@
 import type { JSX, ParentComponent } from 'solid-js';
 
-import { Card, CardActions, CardContent, CardHeader } from '../Card';
-import { Typography } from '../Typography';
+import { Card, CardActions, CardContent, CardHeader } from '../card';
+import { Typography } from '../typography';
 
 export interface InfoSectionProps {
   title: string;

@@ -1,6 +1,6 @@
-import { Section } from '../Section';
-import { Typography } from '../Typography';
-import { Card } from '../Card';
+import { Section } from '../section';
+import { Typography } from '../typography';
+import { Card } from '../card';
 
 export const Contact = () => {
   return (

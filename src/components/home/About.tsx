@@ -1,5 +1,5 @@
-import { Section } from '../Section';
-import { Typography } from '../Typography';
+import { Section } from '../section';
+import { Typography } from '../typography';
 
 export const About = () => {
   return (
