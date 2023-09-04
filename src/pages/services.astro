@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Section, Typography, Contact, InfoSectionList } from '../components';
+
+// const services = ["Custom application development", "Architectural design and consultation", "and more..."];
+---
+
+<Layout>
+  <Section id="intro">
+    <Typography variant="h2" class="mb-6">Development Services</Typography>
+    <Typography class="mb-6">
+      I am a Software Engineer with experience architecting, developing, and managing enterprise
+      applications. I specialize in web application development using Full-stack
+      Javascript/Typescript (React & Node.js). I also have experience working with other tech stacks
+      including Python, C#/.NET, and SQL. I am passionate about architecting and developing
+      user-friendly, scalable, and secure systems.
+    </Typography>
+  </Section>
+  <Section id="services" variant="thick" class="pt-12 pb-24">
+    <div
+      class="pt-12 pb-24 px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8 cursor-pointer"
+    >
+      <InfoSectionList />
+    </div>
+  </Section>
+  <Contact />
+</Layout>

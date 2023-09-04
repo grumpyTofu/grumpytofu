@@ -1,0 +1,19 @@
+---
+import { Card } from '../components';
+import { ContactForm, Section, ToastContainer } from '../components';
+import Layout from '../layouts/Layout.astro';
+
+const grecaptchaKeyId = import.meta.env.PUBLIC_GRECAPTCHA_KEY_ID;
+---
+
+<Layout>
+  <Section id="contact" class="justify-center" wrapperClasses="mt-12">
+    <Card class="!bg-slate-800 my-[5rem] mx-auto py-12 px-8 max-w-4xl">
+      <ContactForm client:only />
+    </Card>
+  </Section>
+  <ToastContainer client:only />
+</Layout>
+
+<script is:inline src=`https://www.google.com/recaptcha/enterprise.js?render=${grecaptchaKeyId}`
+></script>
