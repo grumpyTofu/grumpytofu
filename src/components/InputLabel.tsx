@@ -6,6 +6,7 @@ type InputLabelProps = {
   label?: string;
   required?: boolean;
   margin?: 'none';
+  error?: boolean;
 };
 
 /**
@@ -16,12 +17,12 @@ export function InputLabel(props: InputLabelProps) {
     <Show when={props.label}>
       <label
         class={clsx(
-          'inline-block font-medium md:text-lg lg:text-xl px-1',
-          !props.margin && 'mb-4 lg:mb-5'
+          'block mb-2 text-sm font-medium pb-1',
+          props.error ? 'text-red-500 dark:text-red-400' : 'text-gray-900 dark:text-white'
         )}
         for={props.name}
       >
-        {props.label} {props.required && <span class="ml-1 text-red-600 dark:text-red-400">*</span>}
+        {props.label} {props.required && <span class="text-red-600 dark:text-red-400">*</span>}
       </label>
     </Show>
   );

@@ -1,6 +1,5 @@
-import { email, maxLength, minLength, required, reset } from '@modular-forms/solid';
+import { email, maxLength, minLength, required } from '@modular-forms/solid';
 import { TextField } from '../TextField';
-import { ActionButton } from '../ActionButton';
 import { submitContactForm, contactForm, Form, Field } from './contact.utils';
 import { onMount } from 'solid-js';
 import { createToast, setToken, toasts, token } from '../../store';
@@ -34,7 +33,7 @@ export const ContactForm = () => {
   });
 
   return (
-    <Form class="space-y-12 md:space-y-14 lg:space-y-16" noValidate onSubmit={submitContactForm}>
+    <Form class="space-y-12 md:space-y-14 lg:space-y-16" onSubmit={submitContactForm}>
       <div class="space-y-8 md:space-y-10 lg:space-y-12">
         <Field
           name="name"
@@ -55,6 +54,7 @@ export const ContactForm = () => {
               onBlur={props.onBlur}
               error={field.touched && field.error ? field.error : ''}
               value={field.value}
+              required
             />
           )}
         </Field>
@@ -73,6 +73,7 @@ export const ContactForm = () => {
               onBlur={props.onBlur}
               error={field.touched && field.error ? field.error : ''}
               value={field.value}
+              required
             />
           )}
         </Field>
@@ -97,6 +98,7 @@ export const ContactForm = () => {
               onBlur={props.onBlur}
               error={field.touched && field.error ? field.error : ''}
               value={field.value}
+              placeholder='Please enter your message here.'
               rows={5}
               required
             />
@@ -104,13 +106,7 @@ export const ContactForm = () => {
         </Field>
       </div>
       <div class="col-span-3 flex justify-end space-x-6">
-        <ActionButton
-          variant="secondary"
-          label="Reset"
-          type="button"
-          onClick={() => reset(contactForm)}
-        />
-        <ActionButton variant="primary" label="Submit" type="submit" disabled={isDisabled()} />
+        <button type="submit">Submit</button>
       </div>
     </Form>
   );
