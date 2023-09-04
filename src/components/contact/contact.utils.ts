@@ -29,8 +29,10 @@ export const submitContactForm: SubmitHandler<ContactForm> = async (values) => {
 
     if (response.status !== 200) {
       const result = await response.json();
-      if (result.type && result.type === 'toast-error' && result.message)
+      if (result.type && result.type === 'toast-error' && result.message) {
         throw new ToastError(result.message);
+      }
+      
       throw result;
     }
 
