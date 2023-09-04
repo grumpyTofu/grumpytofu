@@ -1,6 +1,6 @@
 export * from './card';
 export * from './section';
-export * from './Typography';
+export * from './typography';
 
 export * from './home/About';
 export * from './home/Contact';
