@@ -12,7 +12,7 @@ export function InputError(props: InputErrorProps) {
   return (
     <Expandable expanded={!!props.error}>
       <div
-        class="pt-4 text-sm text-red-500 dark:text-red-400 md:text-base lg:pt-5 lg:text-lg"
+        class="text-sm text-red-500 dark:text-red-400 mt-2"
         id={`${props.name}-error`}
       >
         {props.error}

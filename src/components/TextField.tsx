@@ -37,7 +37,12 @@ export function TextField(props: TextInputProps) {
 
   return (
     <div class={clsx(!props.padding)}>
-      <InputLabel name={props.name} label={props.label} required={props.required} />
+      <InputLabel
+        name={props.name}
+        label={props.label}
+        required={props.required}
+        error={!!props.error}
+      />
       <Show
         when={props.rows && props.rows > 1}
         fallback={
@@ -45,9 +50,9 @@ export function TextField(props: TextInputProps) {
             {...inputProps}
             class={clsx(
               props.class,
-              'h-14 w-full rounded-2xl border-2 bg-white px-5 outline-none placeholder:text-slate-500 dark:bg-gray-900 md:h-16 md:text-lg lg:h-[70px] lg:px-6 lg:text-xl',
+              'bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white',
               props.error
-                ? 'border-red-600/50 dark:border-red-400/50'
+                ? 'border-red-600/50 dark:border-red-400/50 focus:ring-red-600/50 dark:focus:ring-red-400/50'
                 : 'border-slate-200 hover:border-slate-300 focus:border-sky-600/50 dark:border-slate-800 dark:hover:border-slate-700 dark:focus:border-sky-400/50'
             )}
             id={props.name}
@@ -58,11 +63,11 @@ export function TextField(props: TextInputProps) {
         }
       >
         <textarea
-          {...inputProps as any}
+          {...(inputProps as any)}
           rows={props.rows}
           class={clsx(
             props.class,
-            'h-[20vh] w-full rounded-2xl border-2 bg-white p-5 outline-none placeholder:text-slate-500 dark:bg-gray-900 md:text-lg lg:px-6 lg:text-xl',
+            'bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500',
             props.error
               ? 'border-red-600/50 dark:border-red-400/50'
               : 'border-slate-200 hover:border-slate-300 focus:border-sky-600/50 dark:border-slate-800 dark:hover:border-slate-700 dark:focus:border-sky-400/50'
