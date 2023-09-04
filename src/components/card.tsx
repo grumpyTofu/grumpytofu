@@ -1,6 +1,6 @@
 import type { JSX, ParentComponent } from 'solid-js';
-import type { GlassVariants } from '../../legacy/src/types';
-import { Typography, type TypographyProps } from './Typography';
+import type { GlassVariants } from '../types';
+import { Typography, type TypographyProps } from './typography';
 
 interface CardProps extends JSX.DetailsHtmlAttributes<HTMLDivElement> {
   variant?: GlassVariants;
