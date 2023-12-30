@@ -7,7 +7,7 @@ export const LoadingDisplay = () => (
       when={loading()}
       fallback={
         <a
-          class="inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center md:h-auto transform hover:scale-125 duration-300 ease-in-out"
+          class="inline-block text-indigo-400 no-underline hover:text-pink-500 hover:text-underline text-center md:h-auto transform hover:scale-125 duration-300 ease-in-out"
           href="https://github.com/grumpyTofu"
           target="_blank"
           rel="noreferrer"

@@ -1,11 +1,5 @@
 export * from './card';
-export * from './section';
 export * from './typography';
-
-export * from './home/About';
-export * from './home/Contact';
-export * from './home/Showcase';
-export * from './home/Services';
 
 export * from './services/InfoSection';
 export * from './services/InfoSectionList';

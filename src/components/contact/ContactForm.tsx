@@ -1,5 +1,5 @@
 import { email, maxLength, minLength, required } from '@modular-forms/solid';
-import { TextField } from '../TextField';
+import { TextField } from './TextField';
 import { submitContactForm, contactForm, Form, Field } from './contact.utils';
 import { onMount } from 'solid-js';
 import { createToast, setToken, toasts, token } from '../../store';
@@ -98,7 +98,7 @@ export const ContactForm = () => {
           )}
         </Field>
       </div>
-      <div class="col-span-3 flex justify-end space-x-6">
+      <div class="col-span-3 flex justify-center md:justify-start space-x-6">
         <button type="submit">Submit</button>
       </div>
     </Form>
