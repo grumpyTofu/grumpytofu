@@ -1,0 +1,70 @@
+---
+import Section from '../Section.astro';
+import Timeline from '../Timeline.astro';
+import TimelineItem from '../TimelineItem.astro';
+
+const experience = [
+  {
+    date: 'April 2023 - Present',
+    company: 'Blackpoint Cyber',
+    title: 'Senior Full-Stack Software Engineer',
+    details: [
+      'Drive development of analytic dashboards utilizing snowflake and kafka',
+      'Lead discovery, architecture, & development of the 1st ever SSO Identity managed detection and response (MDR) product',
+      'Lead discovery, architecture, & development of continuous Dark Web monitoring product',
+    ],
+  },
+  {
+    date: 'July 2022 - April 2023',
+    company: 'Coalfire',
+    title: 'Senior Full-Stack Software Engineer',
+    details: [
+      'Drive architecture & development of an application to automate cybersecurity gap assessments and generate client deliverables',
+      'Lead architecture & development of the world’s first automated OSCAL submission desktop application to secure a $16 million DoD contract',
+      'Drive implementation of new product development processes to streamline the SDLC between stakeholders and developers',
+    ],
+  },
+  {
+    date: 'September 2021 - July 2022',
+    company: 'Frontpoint Security',
+    title: 'Senior Software Engineer',
+    details: [
+      'Lead development of engineering support software such as legal PDF reporting for GDPR and legal subpoena requests with Python & Go',
+      'Developed RingVentral .NET/GraphQL integration in order to improve customer support experience as well as accept payments via phone',
+      'Lead conversion of monolithic .NET & Angular.js app into modern React micro- frontend to support organization transition to cloud',
+      'Mentor Jr. and mid-level engineers',
+    ],
+  },
+  {
+    date: 'March 2018 - September 2021',
+    company: 'Roche',
+    title: 'Software Engineer',
+    details: [
+      'Developed PoC system to identify and classify database variables from documents using AWS and ML to automate clinical trial setup',
+      'Developed custom data pipelines using Python and SQL to create analytic dashboards',
+      'Lead development of an application to improve vendor management built on React and Python',
+      'Serve as stakeholder for Clinical Data Warehouse to streamline clinical data processing',
+      'Developed applications to automate internal processes with React and C#/.NET',
+      'Lead global training for new software system roll-outs',
+      'Support legacy PHP application development for timesheet management',
+    ],
+  },
+];
+---
+
+<Section id="experience" variant='thick'>
+  <div class="w-full pt-14 pb-[12rem]">
+    <Timeline>
+      {
+        experience.map((item) => (
+          <TimelineItem
+            date={item.date}
+            company={item.company}
+            title={item.title}
+            details={item.details}
+          />
+        ))
+      }
+    </Timeline>
+  </div>
+</Section>
