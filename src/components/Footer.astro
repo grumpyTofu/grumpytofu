@@ -1,40 +1,16 @@
-<footer class="dark grid grid-cols-8 gap-4 p-12 glass-frosted pt-[8rem] h-[40vh]">
-  {
-    /* <div class="col-span-full">
-        <Link href="/">GrumpyTofu</Link>
-      </div> */
-  }
-  <div class="col-span-4 flex flex-col space-y-1 text-sm xl:col-span-3">
-    <a href="/about" class="pb-6 md:pb-3">About</a>
-    {/* <a href="/blog">Blog</a> */}
-    <a href="/contact" class="pb-6 md:pb-3">Contact</a>
-  </div>
-  {
-    /* <div class="col-span-4 flex flex-col space-y-1 text-sm xl:col-span-3">
-        <div class="text-secondary">Product</div>
-        <a href="/customers">Case studies</a>
-        <a href="/enterprise">Enterprise</a>
-        <a href="/pricing">Pricing</a>
-        <a href="/changelog">Changelog</a>
-      </div> */
-  }
-  <div class="col-span-4 flex flex-col space-y-1 text-sm xl:col-span-3">
-    <div class="text-secondary text-2xl sm:text-lg md:text-base lg:text-sm pb-6 md:pb-3">
-      Open Source
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="dark p-12 glass-frosted pt-[8rem] min-h-[30vh]">
+
+  <div class="flex justify-between">
+    
+    <hr class="my-6 border-gray-200 sm:mx-autolg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <span class="text-sm text-indigo-300 sm:text-center"
+        >© {year}<a class="hover:underline text-center">GrumpyTofu</a> All Rights Reserved.
+      </span>
     </div>
-    {
-      /* <a href="/vitess">Vitess</a>
-        <a href="https://vitess.io/slack" target="_blank" rel="nofollow noopener noreferrer">
-          Community
-        </a> */
-    }
-    <a
-      href="https://github.com/grumpyTofu"
-      target="_blank"
-      rel="me nofollow noopener noreferrer"
-      class="pb-6 md:pb-3"
-    >
-      GitHub
-    </a>
   </div>
 </footer>

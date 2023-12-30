@@ -1,0 +1,41 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+import type { GlassVariants } from '../types';
+
+interface Props extends HTMLAttributes<'section'> {
+  id: string;
+  dark?: boolean;
+  variant?: GlassVariants;
+  wrapperClasses?: string;
+}
+
+const {
+  id,
+  dark = false,
+  variant = 'default',
+  wrapperClasses,
+  class: classes,
+  ...props
+} = Astro.props;
+
+let sectionClasses = 'min-h-[80vh] flex items-center relative';
+
+switch (variant) {
+  case 'transparant':
+    break;
+  case 'default':
+    sectionClasses += ' glass';
+    break;
+  default:
+    sectionClasses += ` glass-${variant}`;
+}
+
+if (classes) sectionClasses += ` ${classes}`;
+
+let wrapperClassName = 'block w-full px-12';
+if (wrapperClasses) wrapperClassName += ` ${wrapperClasses}`;
+---
+
+<section {...props} id={id} class={sectionClasses}>
+  <div class={wrapperClassName}><slot /></div>
+</section>

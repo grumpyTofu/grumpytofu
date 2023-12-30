@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import { createMemo, type JSX, splitProps, type Component, Switch, Match, Show } from 'solid-js';
-import { InputError } from './InputError';
-import { InputLabel } from './InputLabel';
+import { InputError } from '../InputError';
+import { InputLabel } from '../InputLabel';
 
 type TextInputProps = {
   ref: (element: HTMLInputElement) => void;
