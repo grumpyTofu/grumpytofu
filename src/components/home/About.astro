@@ -4,23 +4,27 @@ import { Typography } from '../typography';
 ---
 
 <Section id="about">
-  <div class="max-w-screen-xl px-8 xl:px-16 mx-auto pb-24">
-    <div
-      class="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16"
-    >
-      <div class="flex flex-col justify-center items-start row-start-2 sm:row-start-1">
-        <Typography variant="h2" class="!font-medium leading-normal">About Me</Typography>
-        <Typography class="my-6">
-          Welcome to my portfolio website, where the coding connoisseur and the recipe developer
-          come together to whip up a dish of success!
-        </Typography>
-        <a href="/about">Learn More</a>
-      </div>
-      <div class="flex w-full">
-        <div class="h-full w-full flex justify-center items-center">
-          <img src="/developer-1.webp" alt="Developer Illustration" width={612} height={383} />
-        </div>
-      </div>
+  <div
+    class="flex items-center flex-col-reverse lg:flex-row max-w-screen-xl px-8 xl:px-16 mx-auto pb-24"
+  >
+    <div class="lg:w-3/4 xl:w-1/2 lg:pr-6">
+      <Typography variant="h2" class="!font-medium leading-normal">About Me</Typography>
+      <Typography class="my-6">
+        Hi there! My name is Austin and I am a Senior Software Engineer with 5+ years of experience
+        architecting, developing, and managing enterprise applications.
+      </Typography>
+      <Typography class="my-6">
+        I specialize in web application development using Typescript (React & Node.js), Python,
+        C#/.NET, and both SQL and NoSQL databases.
+      </Typography>
+      <Typography class="my-6">
+        In my free time, I enjoy playing with emerging technologies such as ML/AI and
+        web3/blockchain. With my professional focus in cybersecurity, I am always looking for ways
+        to apply these technologies to solve difficult problems in the industry!
+      </Typography>
+    </div>
+    <div class="flex justify-center items-center py-24 lg:pl-6 max-w-sm lg:max-w-lg">
+      <img src="/developer-1.webp" alt="Developer Illustration" width={612} height={383} />
     </div>
   </div>
 </Section>
