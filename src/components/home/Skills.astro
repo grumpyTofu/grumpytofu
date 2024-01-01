@@ -1,0 +1,55 @@
+---
+import Section from '../Section.astro';
+import {
+  Icon,
+  AngularIcon,
+  ReactIcon,
+  NextJSIcon,
+  GraphQLIcon,
+  TypescriptIcon,
+  NodeJSIcon,
+  NestJSIcon,
+  CSharpIcon,
+  NetCoreIcon,
+  PythonIcon,
+  GoIcon,
+  MSSQLIcon,
+  PostgreSQLIcon,
+  MongoDBIcon,
+  DockerIcon,
+  TerraformIcon,
+  AWSIcon,
+  AzureIcon,
+  SolidityIcon,
+} from '../icons';
+import { Typography } from '../typography';
+---
+
+<Section id="skills" variant='thick' class="py-12">
+  <Typography variant="h2" class="!font-medium leading-normal text-center mb-6">Skills</Typography>
+  <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 py-6">
+    <Icon label="React" icon={ReactIcon} />
+    <Icon label="NextJS" icon={NextJSIcon} />
+    <Icon label="Angular" icon={AngularIcon} />
+    <Icon label="GraphQL" icon={GraphQLIcon} />
+
+    <Icon label="NodeJS" icon={NodeJSIcon} />
+    <Icon label="NestJS" icon={NestJSIcon} />
+
+    <Icon label="Typescript" icon={TypescriptIcon} />
+    <Icon label="C#" icon={CSharpIcon} />
+    <Icon label=".NET" icon={NetCoreIcon} />
+    <Icon label="Python" icon={PythonIcon} />
+    <Icon label="Go" icon={GoIcon} />
+
+    <Icon label="MS SQL Server" icon={MSSQLIcon} />
+    <Icon label="PostgreSQL" icon={PostgreSQLIcon} />
+    <Icon label="MongoDB" icon={MongoDBIcon} />
+
+    <Icon label="Docker" icon={DockerIcon} />
+    <Icon label="Terraform" icon={TerraformIcon} />
+    <Icon label="AWS" icon={AWSIcon} />
+    <Icon label="Azure" icon={AzureIcon} />
+    <Icon label="Solidity" icon={SolidityIcon} />
+  </div>
+</Section>
