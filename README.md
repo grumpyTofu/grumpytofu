@@ -6,7 +6,7 @@ It looks like you have made it to my github. I am a software engineer with a spe
 
 - Enterprise AppSec best practices.
 - Blockchain architecture and security practices.
-- Full Stack Engineering (.NET, MAUI, TypeScript, NodeJS, Python, React, etc).
+- Full Stack Engineering (.NET, MAUI, TypeScript, NodeJS, Python, React, Java, etc).
 
 <br />
 
@@ -82,8 +82,3 @@ It looks like you have made it to my github. I am a software engineer with a spe
 <br/>
 
 ---
-
-<br/>
-
-Feel free to reach out or head over to [GrumpyTofu.com](https://grumpytofu.com)
-  - It's still very much a work in progress
